@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #05293C;
+}
+:root {
+  --primary: #EE2E43;
+}
+.my-container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.hero-section {
+  padding: 50px 0 20px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-image: url('img/mini-bg.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.section-content {
+  padding-bottom: 40px;
+}
+.hero-section .hero-content img {
+  height: 244px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+.hero-section .hero-content h2 {
+  color: #fff;
+  font-family: 'Noto Sans Bengali', sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  /* padding: 0 210px; */
+}
+.hero-section .hero-img img {
+  height: 340px;
+  width: auto;
+  object-fit: contain;
+}
+.main-content {
+  background-color: #05293C;
+  padding: 50px 0;
+  /* margin-top: 500px; */
+}
+.main-content .contact-area h3 {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 20px;
+  line-height: 32px;
+  font-family: 'Noto Sans Bengali', sans-serif;
+}
+.main-content .contact-area input[type="text"],
+.main-content .contact-area select {
+  border-radius: 0px;
+  font-family: 'Baloo Da 2', sans-serif;
+}
+.search {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 auto;
+  color: #fff;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 10px 80px;
+  font-family: 'Baloo Da 2', sans-serif;
+}
+.details-table {
+  overflow-x: auto;
+}
+.details-table table {
+  text-align: center;
+}
+.details-table table tr th {
+  padding: 15px 5px;
+  font-family: 'Noto Sans Bengali', sans-serif;
+  font-size: 18px;
+}
+.details-table table tr td {
+  padding: 25px 5px;
+  font-family: 'Noto Sans Bengali', sans-serif;
+  font-size: 16px;
+}
+.send-sms {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--primary);
+  padding: 10px;
+  font-family: 'Baloo Da 2', sans-serif;
+}
+/* Modal Area  */
+.modal-content {
+  background: rgba(5, 41, 60, 0.90);
+  color: #fff;
+  padding: 10px 0 30px 0;
+}
+.modal-content .btn-close {
+  background-image: url('img/close.png');
+  opacity: 1;
+}
+.modal-header {
+  border-bottom: transparent;
+}
+.modal-header h1 {
+  font-family: 'Noto Sans Bengali', sans-serif;
+  color: #fff;
+  font-size: 35px;
+}
+.phone-save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone-save input[type='text'] {
+  border-radius: 0px;
+  width: 30%;
+  padding: 10px 5px;
+  border: transparent;
+  font-family: 'Baloo Da 2', sans-serif;
+}
+.phone-send{
+  display: inline;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 10px 60px;
+  margin-left: 50px;
+  font-family: 'Baloo Da 2', sans-serif;
+}
+
+
+/* Responsive area  */
+
+@media screen and (max-width: 1280px) {
+  .hero-section .hero-content h2 {
+    padding: 0 70px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-section {
+    padding: 50px 0 30px 0;
+  
+  }
+  .hero-section .hero-content img {
+    height: 200px;
+  }
+  .hero-section .hero-content h2 {
+    font-size: 25px;
+  }
+  .hero-section .hero-img img {
+    height: 280px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-section {
+    padding: 50px 0 20px 0;
+  
+  }
+  .hero-section .hero-content img {
+    height: 200px;
+  }
+  .hero-section .hero-content h2 {
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 24px;
+  }
+  .hero-section .hero-img img {
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-section {
+    padding: 50px 0 20px 0;
+    background-image: url('img/m-bg.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .section-content {
+    padding-bottom: 40px;
+  }
+  .hero-section .hero-content img {
+    height: 80px;
+  }
+  .hero-section .hero-content h2 {
+    font-size: 16px;
+    padding: 0 35px;
+    line-height: 24px;
+  }
+  .hero-section .hero-img img {
+    height: 140px;
+    width: auto;
+  }
+  .main-content {
+    padding: 15px 0;
+}
+  .main-content .contact-area h3 {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 32px;
+    font-family: 'Noto Sans Bengali', sans-serif;
+  }
+  .details-table table tr th {
+    font-size: 15px;
+  }
+  .details-table table tr td {
+    font-size: 12px;
+  }
+  .phone-save {
+    display: block;
+  }
+  .phone-save input[type='text'] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .phone-send{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 50px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .hero-section {
+    padding: 20px 0 20px 0;
+    background-image: url('img/m-bg.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .section-content {
+    padding-bottom: 32px;
+  }
+  .hero-section .hero-content img {
+    height: 60px;
+  }
+  .hero-section .hero-content h2 {
+    font-size: 13px;
+    padding: 0 0px;
+    line-height: 22px;
+  }
+  .hero-section .hero-img img {
+    height: 120px;
+    width: auto;
+  }
+}
