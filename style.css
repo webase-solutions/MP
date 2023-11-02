@@ -52,7 +52,7 @@ body {
 }
 .main-content .contact-area h3 {
   color: #fff;
-  font-size: 24px;
+  font-size: 30px;
   text-align: center;
   padding-bottom: 20px;
   line-height: 32px;
@@ -113,7 +113,7 @@ body {
 .modal-header h1 {
   font-family: 'Noto Sans Bengali', sans-serif;
   color: #fff;
-  font-size: 35px;
+  font-size: 30px !important;
 }
 .phone-save {
   display: flex;
@@ -137,7 +137,29 @@ body {
   margin-left: 50px;
   font-family: 'Baloo Da 2', sans-serif;
 }
+/* .thanks {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  width: 500px;
+  height: 150px;
+  background: #FFF;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #05293C;
+} */
 
+/* .thanks:after {
+  content: "আপনার তথ্যটি প্রেরণ করা হয়েছে";
+} */
+
+/* .thanks-hidden {
+  display: none;
+} */
 
 /* Responsive area  */
 

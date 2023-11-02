@@ -58,7 +58,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                <input type="submit" value="অনুসন্ধান" class="search">
+                  <a href="details.php" class="search">অনুসন্ধান</a>
                 </div>
               </form>
             </div>

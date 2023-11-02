@@ -31,7 +31,7 @@
     <div class="main-content">
       <div class="my-container">
         <div class="details-table">
-          <table class="table table-bordered">
+          <table class="table table-bordered w-100">
             <thead>
               <tr>
                 <th style="width: 5%;">ক্রমিক</th>
@@ -69,7 +69,7 @@
           </table>
         </div>
           <div class="text-center">
-            <a href="" class="search">পুনরায় অনুসন্ধান করুন</a>
+            <a href="index.php" class="search">পুনরায় অনুসন্ধান করুন</a>
           </div>
       </div>
       <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
@@ -82,14 +82,31 @@
             <div class="modal-body">
               <div class="phone-save">
                 <input type="text" class="" placeholder="মোবাইল নম্বর লিখুন">
-                <a href="" class="phone-send">মোবাইল নম্বর সেন্ড করুন</a>
+                <a href="javascript:void(0);" onclick="redirect()" class="phone-send" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">মোবাইল নম্বর সেন্ড করুন</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="modal fade my-modal" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center pt-5">
+            আপনার তথ্যটি প্রেরণ করা হয়েছে
+          </div>
+        </div>
+        </div>
+      </div>
     </div>
   </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script>
+  function redirect() {
+  document.querySelector('.my-modal').classList.remove('my-modal');
+  setTimeout(() => {
+    window.location.href = 'http://localhost/vote/index.php';
+  }, 2000); // Wait 3 seconds and then redirect.
+  }
+</script>
 </body>
 </html>
